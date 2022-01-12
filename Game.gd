@@ -1,5 +1,7 @@
 extends Control
 
+class_name Game
+
 var deck = Array()
 
 func _ready():
@@ -18,4 +20,4 @@ func shuffleDeck():
 	deck.shuffle()
 
 func dealGame():
-	$HBoxContainer.add_child(deck[0])
+	pass
