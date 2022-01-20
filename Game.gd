@@ -19,5 +19,13 @@ func shuffleDeck():
 	# This could be replaced by a custom shuffle if desired.
 	deck.shuffle()
 
+# To be implemented by child
 func dealGame():
 	pass
+
+#Removes a card from the deck
+func dealCard(faceup:bool):
+	var card = deck.pop_back()
+	if not faceup:
+		card.flip()
+	return card
